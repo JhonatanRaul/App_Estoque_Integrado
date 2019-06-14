@@ -14,26 +14,8 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="libs/node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-    </style>
     <!-- Custom styles for this template -->
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/stock.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,7 +28,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <nav class="col-5 col-sm-3 col-md-3 col-lg-2 d-md-block bg-light sidebar">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -83,8 +65,18 @@
                 </div>
             </nav>
 
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                <h1 class="h2">Purchased materials report</h1>
+            <main role="main" class="col-7 col-sm-9 col-auto ml-auto col-md-9 ml-sm-auto col-lg-10 px-4">
+                <h2 class="h2 pt-3">New Supplier</h2>
+                <div class="my-4 w-100">
+                    <form>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name">
+                      </div>
+                      <button type="submit" class="btn btn-secondary">Save</button>
+                    </form>
+                </div>
+                
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
                         <thead>
@@ -97,99 +89,63 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>1,001</td>
-                                <td>Lorem</td>
-                                <td>ipsum</td>
+                                <td>Caneta</td>
+                                <td>50</td>
+                                <td>$ 0.50</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
-                                <td>1,002</td>
-                                <td>amet</td>
-                                <td>consectetur</td>
+                                <td>Lápis</td>
+                                <td>30</td>
+                                <td>$ 0.35</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
-                                <td>1,003</td>
-                                <td>Integer</td>
-                                <td>nec</td>
+                                <td>Caneta</td>
+                                <td>50</td>
+                                <td>$ 0.50</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
-                                <td>1,003</td>
-                                <td>libero</td>
-                                <td>Sed</td>
+                                <td>Lápis</td>
+                                <td>30</td>
+                                <td>$ 0.35</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
-                                <td>1,004</td>
-                                <td>dapibus</td>
-                                <td>diam</td>
+                                <td>Caneta</td>
+                                <td>50</td>
+                                <td>$ 0.50</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
-                                <td>1,005</td>
-                                <td>Nulla</td>
-                                <td>quis</td>
+                                <td>Lápis</td>
+                                <td>30</td>
+                                <td>$ 0.35</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
-                                <td>1,006</td>
-                                <td>nibh</td>
-                                <td>elementum</td>
+                                <td>Caneta</td>
+                                <td>50</td>
+                                <td>$ 0.50</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
-                                <td>1,007</td>
-                                <td>sagittis</td>
-                                <td>ipsum</td>
+                                <td>Lápis</td>
+                                <td>30</td>
+                                <td>$ 0.35</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
-                                <td>1,008</td>
-                                <td>Fusce</td>
-                                <td>nec</td>
+                                <td>Caneta</td>
+                                <td>50</td>
+                                <td>$ 0.50</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
-                                <td>1,009</td>
-                                <td>augue</td>
-                                <td>semper</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>1,010</td>
-                                <td>massa</td>
-                                <td>Vestibulum</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>1,011</td>
-                                <td>eget</td>
-                                <td>nulla</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>1,012</td>
-                                <td>taciti</td>
-                                <td>sociosqu</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>1,013</td>
-                                <td>torquent</td>
-                                <td>per</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>1,014</td>
-                                <td>per</td>
-                                <td>inceptos</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>1,015</td>
-                                <td>sodales</td>
-                                <td>ligula</td>
+                                <td>Lápis</td>
+                                <td>30</td>
+                                <td>$ 0.35</td>
                                 <td>DETAILS</td>
                             </tr>
                         </tbody>
@@ -205,7 +161,8 @@
     <script src="libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="js/dashboard.js"></script>
+    <script src="js/suppliers.js"></script>
+    <script src="js/stock.js"></script>
 </body>
 
 </html>

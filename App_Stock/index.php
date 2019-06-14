@@ -14,26 +14,8 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="libs/node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-    </style>
     <!-- Custom styles for this template -->
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/stock.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,7 +28,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <nav class="col-5 col-sm-3 col-md-3 col-lg-2 d-md-block bg-light sidebar">
                 <div class="sidebar-sticky">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -83,7 +65,7 @@
                 </div>
             </nav>
 
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <main role="main" class="col-7 col-sm-9 col-auto ml-auto col-md-9 ml-sm-auto col-lg-10 px-4">
                 <h1 class="h2">Purchased materials report</h1>
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
@@ -99,61 +81,61 @@
                             <tr>
                                 <td>Caneta</td>
                                 <td>50</td>
-                                <td>R$ 0,50</td>
+                                <td>$ 0.50</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
                                 <td>Lápis</td>
                                 <td>30</td>
-                                <td>R$ 0,35</td>
+                                <td>$ 0.35</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
                                 <td>Caneta</td>
                                 <td>50</td>
-                                <td>R$ 0,50</td>
+                                <td>$ 0.50</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
                                 <td>Lápis</td>
                                 <td>30</td>
-                                <td>R$ 0,35</td>
+                                <td>$ 0.35</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
                                 <td>Caneta</td>
                                 <td>50</td>
-                                <td>R$ 0,50</td>
+                                <td>$ 0.50</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
                                 <td>Lápis</td>
                                 <td>30</td>
-                                <td>R$ 0,35</td>
+                                <td>$ 0.35</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
                                 <td>Caneta</td>
                                 <td>50</td>
-                                <td>R$ 0,50</td>
+                                <td>$ 0.50</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
                                 <td>Lápis</td>
                                 <td>30</td>
-                                <td>R$ 0,35</td>
+                                <td>$ 0.35</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
                                 <td>Caneta</td>
                                 <td>50</td>
-                                <td>R$ 0,50</td>
+                                <td>$ 0.50</td>
                                 <td>DETAILS</td>
                             </tr>
                             <tr>
                                 <td>Lápis</td>
                                 <td>30</td>
-                                <td>R$ 0,35</td>
+                                <td>$ 0.35</td>
                                 <td>DETAILS</td>
                             </tr>
                         </tbody>
@@ -169,7 +151,7 @@
     <script src="libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="js/dashboard.js"></script>
+    <script src="js/stock.js"></script>
 </body>
 
 </html>
