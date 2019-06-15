@@ -9,7 +9,7 @@ form_new_supplier.addEventListener('submit', (e) => {
     
     $.ajax({
       method: "POST",
-      url: "server/add-supplier.php",
+      url: "server/AddSupplier.php",
       dataType: "JSON",
       data: { 
           id: form_new_supplier.elements['id'].value, 

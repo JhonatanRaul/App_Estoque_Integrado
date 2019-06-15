@@ -9,12 +9,12 @@ form_new_material.addEventListener('submit', (e) => {
     
     $.ajax({
       method: "POST",
-      url: "server/add-material.php",
+      url: "server/AddMaterial.php",
       dataType: "JSON",
       data: { 
           id: form_new_material.elements['id'].value, 
           name: form_new_material.elements['name'].value,  
-          maximum_cost: form_new_material.elements['maximum-cost'].value 
+          _maximumCost: form_new_material.elements['maximum-cost'].value 
       },
       statusCode: {
         201: (row) => {

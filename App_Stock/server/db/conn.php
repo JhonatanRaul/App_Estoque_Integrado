@@ -10,7 +10,7 @@
 	if (!$connection) {
         $errConn = "Connection to the database failed.";
 	} else {
-        if (!$banco_ativo_nosso = mysqli_select_db($connection, $dbn)){
+        if (!$selectDb = mysqli_select_db($connection, $dbn)){
             $errConn = "Database selection failed.";
         }
     }
