@@ -38,7 +38,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./buy.php">
+                            <a class="nav-link" href="#">
                               <span data-feather="shopping-cart"></span>
                               Buy
                             </a>
@@ -68,101 +68,46 @@
             <main role="main" class="col-7 col-sm-9 col-auto ml-auto col-md-9 ml-sm-auto col-lg-10 px-4">
                 <h2 class="h2 pt-3">New Supplier</h2>
                 <div class="my-4 w-100">
-                    <form>
+                    <form name="form-new-supplier">
                       <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="id">Id:</label>
+                        <input type="number" class="form-control" id="id" placeholder="Enter id">
+                      </div>
+                      <div class="form-group">
+                        <label for="name">Name:</label>
                         <input type="text" class="form-control" id="name" placeholder="Enter name">
                       </div>
                       <button type="submit" class="btn btn-secondary">Save</button>
+                      <div id="msg-result" class="mt-3 alert d-none"></div>
                     </form>
                 </div>
                 
-                <div class="table-responsive">
+                <!-- <div class="table-responsive">
                     <table class="table table-striped table-sm">
                         <thead>
                             <tr>
+                                <th>Id</th>
                                 <th>Name</th>
-                                <th>Qtd</th>
-                                <th>Unity Cost</th>
-                                <th>#</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tbody-suppliers">
                             <tr>
-                                <td>Caneta</td>
-                                <td>50</td>
-                                <td>$ 0.50</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Lápis</td>
-                                <td>30</td>
-                                <td>$ 0.35</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Caneta</td>
-                                <td>50</td>
-                                <td>$ 0.50</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Lápis</td>
-                                <td>30</td>
-                                <td>$ 0.35</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Caneta</td>
-                                <td>50</td>
-                                <td>$ 0.50</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Lápis</td>
-                                <td>30</td>
-                                <td>$ 0.35</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Caneta</td>
-                                <td>50</td>
-                                <td>$ 0.50</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Lápis</td>
-                                <td>30</td>
-                                <td>$ 0.35</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Caneta</td>
-                                <td>50</td>
-                                <td>$ 0.50</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Lápis</td>
-                                <td>30</td>
-                                <td>$ 0.35</td>
-                                <td>DETAILS</td>
+                                <td>0</td>
+                                <td>Supplier X</td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> -->
             </main>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>
-        window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
-    </script>
-    <script src="libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="libs/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="libs/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-    <script src="js/suppliers.js"></script>
     <script src="js/stock.js"></script>
+    <script src="js/suppliers.js"></script>
 </body>
 
 </html>
