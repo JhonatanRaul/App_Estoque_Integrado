@@ -37,3 +37,23 @@ function newTableRow(tbody, row) {
         td.innerHTML = row[col];
     }
 }
+
+function getDateInFormat(date){
+    if(date.value != '' && date.value != null && date.value != undefined && date.value != NaN){
+        var element = new Date(date.value);
+        var dd = element.getDate();
+        var mm = element.getMonth() + 1; //January is 0!
+
+        var yyyy = element.getFullYear();
+        if (dd < 10) {
+          dd = '0' + dd;
+        } 
+        if (mm < 10) {
+          mm = '0' + mm;
+        } 
+        var newDate = yyyy + '-' + mm + '-' + dd;
+        return newDate;
+    } else {
+        return;
+    }
+}

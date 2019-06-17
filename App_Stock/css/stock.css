@@ -124,3 +124,15 @@ body {
         font-size: 3.5rem;
     }
 }
+
+/* Códigos desenvolvidos além do template */
+.w100perHauto{
+    width: 100%;
+    height: auto;
+    display: inline-table;
+}
+
+.w100px{
+    width: 150px;
+    float: left;
+}

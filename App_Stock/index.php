@@ -13,6 +13,10 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="libs/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    
+    <!-- jQuery-UI CSS -->
+    <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/stock.css" rel="stylesheet">
@@ -67,6 +71,52 @@
 
             <main role="main" class="col-7 col-sm-9 col-auto ml-auto col-md-9 ml-sm-auto col-lg-10 px-4">
                 <h1 class="h2">Purchased materials report</h1>
+                <div class="my-4 w-100" id="accordion">
+                    <h3>Filter</h3>
+                    <form name="form-reports-filter">
+                          <div class="form-group">
+                            <label for="material">Material:</label>
+                            <input type="text" class="form-control" id="material" name="material" placeholder="Enter material name">
+                          </div>
+                          <div class="form-group">
+                            <label for="supplier">Supplier:</label>
+                            <input type="text" class="form-control" id="supplier" name="supplier" placeholder="Enter supplier name">
+                          </div>
+                          <div class="form-group">
+                                <div class="mb-1">Purchased date:</div>
+                                
+                                <div class="w100perHauto">
+                                    <div class="w100px mr-1">
+                                        <label for="_dtMin">From:</label>
+                                        <input type="text" id="_dtMin" name="_dtMin" class="form-control" placeholder="01/01/2019">
+                                    </div>
+
+                                    <div class="w100px mr-1">
+                                        <label for="_dtMax">to:</label>
+                                        <input type="text" id="_dtMax" name="_dtMax" class="form-control" placeholder="31/12/2019">
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="form-group">
+                                <div class="mb-1">Average unit cost:</div>
+                                
+                                <div class="w100perHauto">
+                                    <div class="w100px mr-1">
+                                        <label for="_avgUcMin">Mín: $</label>
+                                        <input pattern="^\d*(\.\d{0,2})?$" id="_avgUcMin" name="_avgUcMin" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="0.00">
+                                    </div>
+
+                                    <div class="w100px mr-1">
+                                        <label for="_avgUcMax">Máx: $</label>
+                                        <input pattern="^\d*(\.\d{0,2})?$" id="_avgUcMax" name="_avgUcMax" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="0.00">
+                                    </div>
+                                </div>
+                          </div>
+                          <button type="submit" class="btn btn-secondary">Save</button>
+                          <div id="msg-result" class="mt-3 alert d-none"></div>
+                    </form>
+                </div>
+                    
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
                         <thead>
@@ -145,11 +195,13 @@
         </div>
     </div>
     <script src="libs/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="libs/jquery-ui/jquery-ui.min.js"></script>
     <script src="libs/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="js/stock.js"></script>
+    <script src="js/reportsFilter.js"></script>
     <script src="js/reports.js"></script>
 </body>
 
