@@ -1,8 +1,8 @@
 <?php
 
-    $id = $_POST['id'];
-    $name = $_POST['name'];
-    $_maximumCost = $_POST['_maximumCost'];
+    @$id = $_POST['id'];
+    @$name = $_POST['name'];
+    @$_maximumCost = $_POST['_maximumCost'];
 
     if($id == '' || $id == null || $name == '' || $name == null || $_maximumCost == '' || $_maximumCost == null){
         header("HTTP/1.1 400 Bad Request");   

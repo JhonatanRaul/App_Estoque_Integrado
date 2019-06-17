@@ -1,7 +1,7 @@
 <?php
 
-    $id = $_POST['id'];
-    $name = $_POST['name'];
+    @$id = $_POST['id'];
+    @$name = $_POST['name'];
 
     if($id == '' || $id == null || $name == '' || $name == null){
         header("HTTP/1.1 400 Bad Request");   

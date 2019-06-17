@@ -1,0 +1,31 @@
+Sistema de estoque
+
+O sistema criado em /App_Stock possui duas páginas para o encarregado de estoque cadastrar fornecedores e padrões de materiais, esses cadastros tem a finalidade de abastecer a base de dados para que o sitema de compras possa buscar materiais e fornecedores, além disso o material que for comprado só poderá ser inserido na base de dados do estoque (que se dá atravéz da /API) se possuir custo unitário menor que o custo unitário do padrão de material cadastrado. O sistema também possui uma página de geração de relatórios dos materiais comprados que foram cadastrados.
+
+Para técnicos:
+
+Para realizar transações no banco de dados todas as páginas tem sua comunicação com o servidor por meio do padrão REST.
+
+Segue as URLS:
+
+-- Fornecedores:
+/Exame_Radiante/App_Stock/suppliers.php
+
+-- POST REST:
+/Exame_Radiante/App_Stock/server/AddSupplier.php
+
+-- Materiais:
+/Exame_Radiante/App_Stock/materials.php
+
+-- POST REST:
+/Exame_Radiante/App_Stock/server/AddMaterial.php
+
+-- Inserir materiais comprados no estoque
+-- POST REST (API NodeJS em /API):
+/material
+
+-- Relatórios:
+-- GET REST (Parâmetros no body opcional):
+/Exame_Radiante/App_Stock/server/Reports.php
+
+/Exame_Radiante/App_Stock/index.php (ainda não implementado)

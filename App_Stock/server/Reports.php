@@ -1,11 +1,11 @@
 <?php
 
-    @$_dtMin = $_POST['_dtMin']; // data de aquisição miníma
-    @$_dtMax = $_POST['_dtMax']; // data de aquisição máxima
-    @$material = $_POST['material'];
-    @$supplier = $_POST['supplier'];
-    @$_avgUcMin = $_POST['_avgUcMin']; // média miníma de custo unitário
-    @$_avgUcMax = $_POST['_avgUcMax']; // média máxima de custo unitário
+    @$_dtMin = $_GET['_dtMin']; // data de aquisição miníma
+    @$_dtMax = $_GET['_dtMax']; // data de aquisição máxima
+    @$material = $_GET['material'];
+    @$supplier = $_GET['supplier'];
+    @$_avgUcMin = $_GET['_avgUcMin']; // média miníma de custo unitário
+    @$_avgUcMax = $_GET['_avgUcMax']; // média máxima de custo unitário
 
     include_once 'db/conn.php';
 
