@@ -72,8 +72,8 @@
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>Qtd</th>
-                                <th>Unity Cost</th>
+                                <th>Total Qtd</th>
+                                <th>Average Unit Cost</th>
                                 <th>#</th>
                             </tr>
                         </thead>
@@ -150,6 +150,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="js/stock.js"></script>
+    <script src="js/reports.js"></script>
 </body>
 
 </html>
