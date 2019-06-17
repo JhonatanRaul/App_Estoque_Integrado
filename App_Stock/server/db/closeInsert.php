@@ -9,6 +9,7 @@
             mysqli_close($connection);
 
             header("HTTP/1.1 201 Created");
+            header('Content-Type: application/json');
             echo $res; 
         } else {
             $errNo = mysqli_errno($connection);
