@@ -204,10 +204,3 @@ $(function () {
         });
     });
 });
-
-
-setTimeout(function (){
-    var curDate = $('#_dtMin').datepicker( "getDate" );
-    getDateInFormat(curDate);
-}, 2000)
-

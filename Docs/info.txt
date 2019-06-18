@@ -25,10 +25,13 @@ Segue as URLS:
 /material
 
 -- Relatórios:
--- GET REST (Parâmetros no body opcional):
+/Exame_Radiante/App_Stock/index.php
+
+-- GET REST:
 /Exame_Radiante/App_Stock/server/Reports.php
 
--- Teste de consulta nos relatórios:
-http://localhost/Exame_Radiante/App_Stock/server/Reports.php?material=cLad&supplier=rroS&_dtMin=2018-06-15&_dtMax=2018-06-15&_avgUcMin=0.03&_avgUcMax=0.07
+-- Teste de consulta GET REST:
+/Exame_Radiante/App_Stock/server/Reports.php?material=cLad&supplier=rroS&_dtMin=2018-06-15&_dtMax=2018-06-15&_avgUcMin=0.03&_avgUcMax=0.07
 
-/Exame_Radiante/App_Stock/index.php (ainda não implementado)
+-- Teste de consulta nos relatórios:
+http://localhost/Exame_Radiante/App_Stock/?material=cLad&supplier=rroS&_dtMin=2018-06-15&_dtMax=2018-06-15&_avgUcMin=0.03&_avgUcMax=0.07
