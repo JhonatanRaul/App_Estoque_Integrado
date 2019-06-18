@@ -71,7 +71,7 @@
 
             <main role="main" class="col-7 col-sm-9 col-auto ml-auto col-md-9 ml-sm-auto col-lg-10 px-4">
                 <h1 class="h2">Purchased materials report</h1>
-                <div class="my-4 w-100" id="accordion">
+                <div class="my-4 w-100 d-none" id="accordion">
                     <h3>Filter</h3>
                     <form name="form-reports-filter">
                           <div class="form-group">
@@ -150,6 +150,7 @@
     <script src="libs/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <script src="js/stock.js"></script>
     <script src="js/reports.js"></script>
 </body>

@@ -9,8 +9,9 @@
   "author": "Jhonatan Raul Krautczuk",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
-    "popper.js": "^1.15.0",
-    "bootstrap": "^4.3.1"
+    "polyfill": "^0.1.0",
+    "popper.js": "^1.15.0"
   }
 }

@@ -34,9 +34,16 @@ $(function () {
         return date;
     }
     
-    $("#accordion").accordion({
-        collapsible: true
-    });
+    setTimeout(function(){
+        document.getElementById('accordion').classList.remove('d-none');
+        $("#accordion").accordion({
+            create: function( event, ui ) {
+                
+            },
+            active: false,
+            collapsible: true
+        });
+    }, 0)
     // Fim dos scripts iniciais para renderização padrão
     
     // Scripts para ajuste do filtro
@@ -116,20 +123,21 @@ $(function () {
       method: "GET",
       url: "server/Reports.php" + newParams,
       statusCode: {
-        200: (data) => {
+        200: function(data) {
           successMsg(msg_result, 'The report was successfully generated.');
-            // Se tiver supplier adicionar ele no thead
-          data.forEach((e, i, array) => {
+          data.forEach(function(e, i, array) {
+            delete data[i].ID_SUPPLIER;
+            delete data[i].SUPPLIER;
             data[i].btn = '<button>DETAILS</button>';
             data[i].AVG_UNIT_COST = '$ ' + data[i].AVG_UNIT_COST;
             newTableRow(tbody_reports, data[i]);
           });
         },
-        500: (err) => {
+        500: function(err) {
           dangerMsg(msg_result, '500 - Could not perform query. Internal error.');
           console.log(err)
         },
-        503:  (err) => {
+        503: function(err) {
           dangerMsg(msg_result, '503 - Could not perform query. Internal error.');
           console.log(err.responseText)
         }
@@ -139,7 +147,7 @@ $(function () {
 });
 
 
-setTimeout(() => {
+setTimeout(function (){
     var curDate = $('#_dtMin').datepicker( "getDate" );
     getDateInFormat(curDate);
 }, 2000)
