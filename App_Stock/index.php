@@ -112,7 +112,7 @@
                                     </div>
                                 </div>
                           </div>
-                          <button type="submit" class="btn btn-secondary" disabled>Filter</button>
+                          <button type="submit" class="btn btn-secondary">Filter</button>
                     </form>
                 </div>
                 <div id="msg-result" class="mt-3 alert d-none"></div>
