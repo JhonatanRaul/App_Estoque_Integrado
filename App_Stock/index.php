@@ -112,82 +112,32 @@
                                     </div>
                                 </div>
                           </div>
-                          <button type="submit" class="btn btn-secondary">Save</button>
-                          <div id="msg-result" class="mt-3 alert d-none"></div>
+                          <button type="submit" class="btn btn-secondary" disabled>Filter</button>
                     </form>
                 </div>
+                <div id="msg-result" class="mt-3 alert d-none"></div>
                     
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
                         <thead>
                             <tr>
+                                <th>Id Purchased</th>
                                 <th>Name</th>
                                 <th>Total Qtd</th>
                                 <th>Average Unit Cost</th>
                                 <th>#</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tbody-reports">
+                           <!--
                             <tr>
+                                <td>0</td>
                                 <td>Caneta</td>
                                 <td>50</td>
                                 <td>$ 0.50</td>
                                 <td>DETAILS</td>
                             </tr>
-                            <tr>
-                                <td>Lápis</td>
-                                <td>30</td>
-                                <td>$ 0.35</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Caneta</td>
-                                <td>50</td>
-                                <td>$ 0.50</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Lápis</td>
-                                <td>30</td>
-                                <td>$ 0.35</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Caneta</td>
-                                <td>50</td>
-                                <td>$ 0.50</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Lápis</td>
-                                <td>30</td>
-                                <td>$ 0.35</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Caneta</td>
-                                <td>50</td>
-                                <td>$ 0.50</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Lápis</td>
-                                <td>30</td>
-                                <td>$ 0.35</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Caneta</td>
-                                <td>50</td>
-                                <td>$ 0.50</td>
-                                <td>DETAILS</td>
-                            </tr>
-                            <tr>
-                                <td>Lápis</td>
-                                <td>30</td>
-                                <td>$ 0.35</td>
-                                <td>DETAILS</td>
-                            </tr>
+                            -->
                         </tbody>
                     </table>
                 </div>
@@ -201,7 +151,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="js/stock.js"></script>
-    <script src="js/reportsFilter.js"></script>
     <script src="js/reports.js"></script>
 </body>
 
